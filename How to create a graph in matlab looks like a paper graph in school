@@ -1,0 +1,29 @@
+clear
+>> %data for x axis
+>> x=(-2*pi:pi/10:2*pi);
+>> %data for y axis 
+>> y=sin(x);
+>> %plot
+>> plot(x,y);
+>> %graph editing 
+>> ax=gca;
+>> ax.XGrid ='on';
+>> ax.YGrid='on';
+>> %move axis to center
+>> ax.XAxisLocation='origin';
+>> ax.YAxisLocation='origin';
+>> %put the label name
+>> ax.XLabel.String='X-axis';
+>> ax.YLabel.String='Y-axis';
+>> %add a box to plot
+>> ax.Box='on';
+>> %add color to grids
+>> ax.XAxis.Color='b';
+>> ax.YAxis.Color='m';
+>> % add minor grid to the graph
+>> grid on; grid minor;
+>> %add title
+>> t=('$y=sin(x)$');
+>> title(t,'interpreter','latex');
+>> 
+>> 
